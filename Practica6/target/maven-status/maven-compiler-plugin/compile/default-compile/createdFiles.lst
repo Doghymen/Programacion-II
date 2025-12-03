@@ -1,0 +1,13 @@
+modelo\DataStore.class
+modelo\Estudiante.class
+modelo\Biblioteca.class
+modelo\Libro.class
+modelo\Prestamo.class
+vista\FrmLibro.class
+modelo\Autor.class
+vista\FrmBiblioteca.class
+modelo\Horario.class
+vista\FrmAutor.class
+modelo\Pagina.class
+vista\FrmEstudiante.class
+vista\Main.class
