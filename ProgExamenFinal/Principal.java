@@ -46,8 +46,17 @@ public class Principal {
             consulta.mostrarConsultas();
 
 
+            System.out.println("====================================================");
+            System.out.println("==== CAMBIANDO FECHAS ESPECIALES ===========");
+            System.out.println("====================================================");
+            con.cambiarFechasEspeciales();
+            consulta.mostrarMedicos();
+            consulta.mostrarConsultas();
+
+
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
 }
+
