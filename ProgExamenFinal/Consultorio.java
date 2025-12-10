@@ -81,6 +81,24 @@ public class Consultorio implements Serializable{
         guardarLista(medicos, meds);
         guardarLista(consultas, cons);
     }
+
+
+    public void cambiarFechasEspeciales() throws Exception {
+        ArrayList<Consulta> cons = cargarLista(consultas);
+
+        for (int i = 0; i < cons.size(); i++) {
+            Consulta c = cons.get(i);
+
+            boolean navidad = (c.getDia() == 25 && c.getMes().equals("Diciembre"));
+            boolean anioNuevo = (c.getDia() == 1 && c.getMes().equals("Enero"));
+
+            if (navidad || anioNuevo) {
+                c.setDia(c.getDia() + 1); // mover un día
+            }
+        }
+
+        guardarLista(consultas, cons);
+    }
     
     
     public void mostrarMedicos() throws Exception {
@@ -101,3 +119,4 @@ public class Consultorio implements Serializable{
         }
     }
 }
+
